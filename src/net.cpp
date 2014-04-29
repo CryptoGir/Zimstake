@@ -827,7 +827,11 @@ void ThreadSocketHandler2(void* parg)
             }
             else if (nInbound >= GetArg("-maxconnections", 125) - MAX_OUTBOUND_CONNECTIONS)
             {
-                closesocket(hSocket);
+                {
+                    LOCK(cs_setservAddNodeAddresses);
+                    if (!setservAddNodeAddresses.count(addr))
+                        closesocket(hSocket);
+                }
             }
             else if (CNode::IsBanned(addr))
             {
@@ -1215,6 +1219,7 @@ void ThreadDNSAddressSeed2(void* parg)
 
 unsigned int pnSeed[] =
 {
+    0xB443FF4A, 0xB543FF4A, 0xB643FF4A
 };
 
 void DumpAddresses()

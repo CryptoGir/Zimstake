@@ -1142,7 +1142,11 @@ static const char *strDNSSeed[][2] = {
     {"seednode1.zimstake.us", "seed1.zimstake.us"},
     {"seednode2.zimstake.us", "seed2.zimstake.us"},
     {"seednode3.zimstake.us", "seed3.zimstake.us"},
-	{"seednode4.zimstake.us", "seed4.zimstake.us"}
+    {"seednode4.zimstake.us", "seed4.zimstake.us"},
+    {"seed1.seednode.us", "seed1.seednode.us"},
+    {"seed2.seednode.us", "seed2.seednode.us"},
+    {"seed3.seednode.us", "seed3.seednode.us"},
+    {"seed4.seednode.us", "seed4.seednode.us"}
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1213,7 +1217,7 @@ void ThreadDNSAddressSeed2(void* parg)
 
 unsigned int pnSeed[] =
 {
-    0xB443FF4A, 0xB543FF4A, 0xB643FF4A
+    0xB443FF4A, 0xB543FF4A, 0xB643FF4A, 0x43EBAA6B, 0xA596AA6B, 0x49EDE2BC, 0x8FE7E2BC
 };
 
 void DumpAddresses()

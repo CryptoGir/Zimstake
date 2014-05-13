@@ -985,7 +985,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 16 * 60;  // 1 min
+static const int64_t nTargetTimespan = 16 * 60;  // 16 min
 
 //
 // maximum nBits value could possible be required nTime after
@@ -2589,7 +2589,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return error("LoadBlockIndex() : failed to init sync checkpoint");
     }
 
-    string strPubKey = "";
+    string strPubKey = "04a5d9c5c4fc7b46c336a2e84c4af25609af4aa18f52c02e09d0d9a7fda8c8c6a6e113fe5858395ca72b35c4175a7f26e38da1caef2d408ac5eb82c6d07e572da7";
 
     // if checkpoint master key changed must reset sync-checkpoint
     if (!txdb.ReadCheckpointPubKey(strPubKey) || strPubKey != CSyncCheckpoint::strMasterPubKey)

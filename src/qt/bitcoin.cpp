@@ -145,7 +145,7 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     app.setOrganizationName("Zimstake");
-    //XXX app.setOrganizationDomain("");
+    app.setOrganizationDomain("zimstake.us");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
         app.setApplicationName("zimstake-qt-testnet");
     else

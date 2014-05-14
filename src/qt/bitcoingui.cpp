@@ -88,7 +88,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 #endif
 
     setObjectName("zimApp");
-    setStyleSheet("#zimApp { background-image: url(:/icons/backg); } QToolTip { color: #ffffff; background-color: #DFDFDF;  border:0px;} ");
+    setStyleSheet("#zimApp { font-family: 'Comic Sans'; background-image: url(:/icons/backg); } QToolTip { font-family: 'Comic Sans'; color: #ffffff; background-color: #646464;  border:0px;} ");
 
     // Accept D&D of URIs
     setAcceptDrops(true);
@@ -175,12 +175,15 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     QString curStyle = qApp->style()->metaObject()->className();
     if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
     {
-        progressBar->setStyleSheet("QProgressBar { background-color: #76316A; border: 0px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
+        progressBar->setStyleSheet("QProgressBar { background-color: #67265C; border: 0px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
     }
 
     statusBar()->addWidget(progressBarLabel);
     statusBar()->addWidget(progressBar);
     statusBar()->addPermanentWidget(frameBlocks);
+
+    statusBar()->setObjectName("zimStatusBar");
+    statusBar()->setStyleSheet("#zimStatusBar { border-top-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4B4F52, stop:0.5 #8B8F92, stop:1.0 #8B8F92); border-top-width: 2px; border-top-style: inset; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F83BDF, stop:0.5 #B0429E, stop:1.0 #67265C); color: #ffffff; } QToolTip { font-family: 'Comic Sans'; color: #ffffff; background-color: #646464;  border:0px;}");
 
     syncIconMovie = new QMovie(":/movies/update_spinner", "mng", this);
 
@@ -321,6 +324,8 @@ void BitcoinGUI::createMenuBar()
     file->addAction(verifyMessageAction);
     file->addSeparator();
     file->addAction(quitAction);
+    file->setObjectName("fileMenu");
+    file->setStyleSheet("#fileMenu { margin: 120px 0px 0px 0px; }");
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
     settings->addAction(encryptWalletAction);
@@ -350,6 +355,11 @@ void BitcoinGUI::createToolBars()
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     toolbar2->addAction(exportAction);
+
+    toolbar->setObjectName("tabsToolbar");
+    toolbar2->setObjectName("actionsToolbar");
+    toolbar->setStyleSheet("QToolButton { font-family: 'Comic Sans';min-height:48px;color:#ffffff;font-weight:bold; border:none;margin:0px;padding:0px;} QToolButton:hover { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #C887BC, stop:1.0 #D887BC); margin:0px; padding:0px; border:none; } QToolButton:checked { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C); margin:0px; padding:0px; border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #67266C, stop:0.5 #B0428E, stop:1.0 #B0428E);border-right-width:2px;border-right-style:inset; border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #B0428E, stop:0.5 #B0428E, stop:1.0 #67266C);border-left-width:2px;border-left-style:inset; } QToolButton:pressed { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C); margin:0px; padding:0px; border:none;} QToolButton:selected { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C); margin:0px;padding:0px;border:none; } #tabsToolbar { min-height:48px; color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969); margin:0px; padding:0px; border-top-color: rgba(160, 160, 160, 191); border-top-width: 1px; border-top-style: inset;  } QToolBar::handle { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969); }");
+    toolbar2->setStyleSheet("QToolButton { font-family: 'Comic Sans';min-height:48px;color:#ffffff;font-weight:bold; border:none;margin:0px;padding:0px;} QToolButton::disabled { color: #CCA0C4; } QToolButton:hover { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #C887BC, stop:1.0 #D887BC); margin:0px; padding:0px; border:none; } QToolButton:checked { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C); margin:0px; padding:0px; border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #67266C, stop:0.5 #B0428E, stop:1.0 #B0428E);border-right-width:2px;border-right-style:inset; border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #B0428E, stop:0.5 #B0428E, stop:1.0 #67266C);border-left-width:2px;border-left-style:inset; } QToolButton:pressed { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C); margin:0px; padding:0px; border:none; border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #B0428E, stop:0.5 #B0428E, stop:1.0 #67266C);border-left-width:2px;border-left-style:inset;} QToolButton:selected { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C); margin:0px;padding:0px;border:none; } #actionsToolbar { color: #ffffff; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969); margin:0px; padding:0px; border-top-color: rgba(160, 160, 160, 191); border-top-width: 1px; border-top-style: inset;  } QToolBar::handle { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969); }");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)

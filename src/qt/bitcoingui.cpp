@@ -88,7 +88,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 #endif
 
     setObjectName("zimApp");
-    setStyleSheet("#zimApp { background-image: url(:/icons/backg.png); } QToolTip { color: #ffffff; background-color: #DFDFDF;  border:0px;} ");
+    setStyleSheet("#zimApp { background-image: url(:/icons/backg); } QToolTip { color: #ffffff; background-color: #DFDFDF;  border:0px;} ");
 
     // Accept D&D of URIs
     setAcceptDrops(true);

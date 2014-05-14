@@ -86,6 +86,10 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
 #endif
+
+    setObjectName("zimApp");
+    setStyleSheet("#zimApp { background-image: url(:/icons/backg.png); } QToolTip { color: #ffffff; background-color: #DFDFDF;  border:0px;} ");
+
     // Accept D&D of URIs
     setAcceptDrops(true);
 

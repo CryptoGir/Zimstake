@@ -88,7 +88,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 #endif
 
     setObjectName("zimApp");
-    setStyleSheet("#zimApp { font-family: 'Comic Sans'; background-image: url(:/icons/backg); background-position: top center; background-repeat:no-repeat; } QToolTip { font-family: 'Comic Sans'; color: #ffffff; background-color: #646464;  border:0px;} ");
+    //setStyleSheet("#zimApp { font-family: 'Comic Sans'; background-image: url(:/icons/backg); background-position: top center; background-repeat:no-repeat; } QToolTip { font-family: 'Comic Sans'; color: #ffffff; background-color: #646464;  border:0px;} ");
+    setStyleSheet("#zimApp { font-family: 'Comic Sans'; background-image: url(:/icons/backg); background-position: top center; background-repeat:repeat-x; } QToolTip { font-family: 'Comic Sans'; color: #ffffff; background-color: #646464;  border:0px;} ");
 
     // Accept D&D of URIs
     setAcceptDrops(true);

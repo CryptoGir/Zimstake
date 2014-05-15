@@ -77,8 +77,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     notificator(0),
     rpcConsole(0)
 {
-    QWidget::setWindowFlags( Qt::WindowFlags );
-    setWindowFlags( Qt::CustomizeWindowHint );
+    setWindowFlags( Qt::FramelessWindowHint );
     resize(850, 550);
     setWindowTitle(tr("Zimstake") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC

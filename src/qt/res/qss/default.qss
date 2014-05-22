@@ -1,0 +1,118 @@
+QMainWindow
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/icons/v-back);
+    background-position: top center;
+    background-repeat:repeat-x;
+}
+
+QToolTip
+{
+    color: #ffffff;
+    background-color: #646464;
+    border:0px;
+    font-weight:bold;
+}
+
+QProgressBar
+{
+    border-top-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #EB51F6, stop:1.0 #67266C);
+    border-top-style: inset;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #EB51F6, stop:1.0 #67266C);
+}
+
+QProgressBar::chunk
+{
+    background-color: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FFFFFF, stop: 1 white);
+    border-radius: 7px;
+    margin: 0px;
+}
+
+QMenu
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969);
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+QMenu::item
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #C887BC, stop:1.0 #D887BC);
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+
+QMenuBar
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969);
+}
+
+QMenuBar::item
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969);
+}
+
+QToolbar
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969);
+    margin:0px;
+    padding:0px;
+    border-top-color: rgba(160, 160, 160, 191);
+    border-top-width: 1px;
+    border-top-style: inset;
+}
+
+QToolBar::handle
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969);
+}
+
+QToolButton
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0427E, stop:1.0 #752969);
+    min-height:48px;
+    border:none;
+    margin:0px;
+    padding:0px;
+}
+
+QToolbar::hover
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #C887BC, stop:1.0 #D887BC);
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+
+QToolbar::checked {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C);
+    margin:0px;
+    padding:0px;
+    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #67266C, stop:0.5 #B0428E, stop:1.0 #B0428E);border-right-width:2px;border-right-style:inset;
+    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #B0428E, stop:0.5 #B0428E, stop:1.0 #67266C);border-left-width:2px;border-left-style:inset;
+}
+
+QToolButton::pressed
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C);
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+
+QToolbar::selected
+{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B0429E, stop:1.0 #67265C);
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+
+QToolbar::disabled
+{
+    color: #CCA0C4;
+}

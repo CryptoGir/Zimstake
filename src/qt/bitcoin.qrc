@@ -1,4 +1,7 @@
 <RCC>
+	<qresource prefix="/qss">
+		<file alias="default">res/qss/default.qss</file>
+	</qresource>
     <qresource prefix="/icons">
         <file alias="bitcoin">res/icons/zimstake-80.png</file>
         <file alias="address-book">res/icons/address-book.png</file>

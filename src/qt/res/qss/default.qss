@@ -3,8 +3,15 @@ QMainWindow
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/icons/v-back);
+    background-image: url(:/images/v-back);
     background-position: top center;
+}
+
+QLabel
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
 }
 
 QToolTip
@@ -16,12 +23,20 @@ QToolTip
     font-weight:bold;
 }
 
+QMenu
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/v-back);
+}
+
 QMenuBar
 {
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/icons/v-back);
+    background-image: url(:/images/v-back);
 }
 
 QMenuBar::item
@@ -29,5 +44,35 @@ QMenuBar::item
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/icons/v-back);
+    background-image: url(:/images/v-back);
+}
+
+QListView
+{
+    background: transparent;
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;    
+}
+
+QToolButton
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background: transparent;
+}
+
+QDialogButtonBox
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+}
+
+QPushButton
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
 }

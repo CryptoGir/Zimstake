@@ -1,7 +1,7 @@
 <RCC>
-	<qresource prefix="/qss">
-		<file alias="default">res/qss/default.qss</file>
-	</qresource>
+    <qresource prefix="/qss">
+        <file alias="default">res/qss/default.qss</file>
+    </qresource>
     <qresource prefix="/icons">
         <file alias="bitcoin">res/icons/zimstake-80.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
@@ -52,6 +52,7 @@
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
+        <file alias="v-bar">res/images/v-bar.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

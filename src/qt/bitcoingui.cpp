@@ -56,6 +56,7 @@
 #include <QDragEnterEvent>
 #include <QUrl>
 #include <QStyle>
+#include <QtGui>
 
 #include <iostream>
 
@@ -77,6 +78,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     notificator(0),
     rpcConsole(0)
 {
+    setMask((new QPixmap("bitcoin_testnet"))->mask());
+
+    QPalette* palette = new QPalette();
+    palette->setBrush(QPalette::Background,QBrush(QPixmap("bitcoin_testnet")));
+    setPalette(*palette);
+
+    setWindowFlags(Qt::FramelessWindowHint);
+
     resize(850, 550);
     setWindowTitle(tr("Zimstake") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC

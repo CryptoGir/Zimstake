@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <property name="styleSheet">
+    <property name="styleSheet">
    <string notr="true">#OverviewPage { font-family: 'Comic Sans'; margin:0px;padding:0px;color: #F2B9F2;background-image:url(:/icons/v-back);} QToolTip { color:#ffffff; }</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
@@ -21,7 +21,7 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QFrame" name="frame">
-       <property name="styleSheet">
+	         <property name="styleSheet">
         <string notr="true">#frame { background-color:rgba(0,0,0,20);border-radius:3px;border-color:#FBBCFF;border-width:2px;margin-left:9px; }</string>
        </property>
        <property name="frameShape">
@@ -268,9 +268,10 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="styleSheet">
+	          <property name="styleSheet">
         <string notr="true">#frame_2 { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,0,0,20), stop:1.0 rgba(0,0,0,0));border-radius:3px;border-width:2px;border-color:#FBBCFF;margin-right:9px; }</string>
        </property>
+
        <property name="frameShape">
         <enum>QFrame::StyledPanel</enum>
        </property>

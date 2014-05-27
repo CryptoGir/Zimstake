@@ -36,7 +36,7 @@ QTabBar::tab
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background-image: url(:/images/button);
 }
 
 QTabBar::tab:selected, QTabBar::tab:hover
@@ -44,7 +44,7 @@ QTabBar::tab:selected, QTabBar::tab:hover
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background-image: url(:/images/button);
 }
 
 QWidget

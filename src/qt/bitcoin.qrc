@@ -50,9 +50,10 @@
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
-        <file alias="v-bar">res/images/v-bar.png</file>
         <file alias="v-back">res/images/v-back.png</file>
         <file alias="w-logo">res/images/w-logo.png</file>
+        <file alias="button">res/images/button.png</file>
+        <file alias="s-back">res/images/s-back.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

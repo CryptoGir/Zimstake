@@ -7,12 +7,31 @@ QMainWindow
     background-position: top center;
 }
 
+QTabWidget
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/s-back);
+}
+
 QWidget
 {
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/v-back);
+    background-image: url(:/images/s-back);
+}
+
+QProgressBar
+{
+    border-top-style: inset;
+
+}
+
+QProgressBar::chunk
+{
+
 }
 
 QLabel
@@ -36,7 +55,7 @@ QMenu
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/v-back);
+    background-image: url(:/images/s-back);
 }
 
 QMenuBar
@@ -44,7 +63,7 @@ QMenuBar
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/v-back);
+    background-image: url(:/images/s-back);
 }
 
 QMenuBar::item
@@ -52,7 +71,7 @@ QMenuBar::item
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/v-back);
+    background-image: url(:/images/s-back);
 }
 
 QListView
@@ -76,6 +95,7 @@ QDialogButtonBox
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
+    background-image: url(:/images/button);
 }
 
 QPushButton
@@ -83,6 +103,7 @@ QPushButton
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
+    background-image: url(:/images/button);
 }
 
 QDialog
@@ -90,5 +111,5 @@ QDialog
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/v-back);
+    background-image: url(:/images/s-back);
 }

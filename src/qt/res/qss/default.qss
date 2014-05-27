@@ -7,6 +7,14 @@ QMainWindow
     background-position: top center;
 }
 
+QWidget
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/v-back);
+}
+
 QLabel
 {
     font-family: 'Comic Sans';
@@ -75,4 +83,12 @@ QPushButton
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
+}
+
+QDialog
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/v-back);
 }

@@ -35,13 +35,10 @@
          <property name="text">
           <string>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</string>
          </property>
-         <property name="textFormat">
-          <enum>Qt::PlainText</enum>
-         </property>
-         <property name="wordWrap">
+		 <property name="wordWrap">
           <bool>true</bool>
          </property>
-        </widget>
+		 </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayoutFee">
@@ -49,9 +46,6 @@
           <widget class="QLabel" name="transactionFeeLabel">
            <property name="text">
             <string>Pay transaction &amp;fee</string>
-           </property>
-           <property name="textFormat">
-            <enum>Qt::PlainText</enum>
            </property>
            <property name="buddy">
             <cstring>transactionFee</cstring>
@@ -433,12 +427,6 @@
      </item>
      <item>
       <widget class="QLabel" name="statusLabel">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
        <property name="text">
         <string/>
        </property>

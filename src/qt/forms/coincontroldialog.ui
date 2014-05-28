@@ -48,12 +48,6 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlQuantity">
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -70,9 +64,6 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlBytesText">
-         <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
-         </property>
          <property name="text">
           <string>Bytes:</string>
          </property>
@@ -80,12 +71,6 @@
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="labelCoinControlBytes">
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -118,9 +103,6 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAmountText">
-         <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
-         </property>
          <property name="text">
           <string>Amount:</string>
          </property>
@@ -128,12 +110,6 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlAmount">
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -150,9 +126,6 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlPriorityText">
-         <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
-         </property>
          <property name="text">
           <string>Priority:</string>
          </property>
@@ -160,12 +133,6 @@
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="labelCoinControlPriority">
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -198,9 +165,6 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlFeeText">
-         <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
-         </property>
          <property name="text">
           <string>Fee:</string>
          </property>
@@ -208,12 +172,6 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlFee">
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -233,9 +191,6 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
-         <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
-         </property>
          <property name="text">
           <string>Low Output:</string>
          </property>
@@ -245,12 +200,6 @@
         <widget class="QLabel" name="labelCoinControlLowOutput">
          <property name="enabled">
           <bool>false</bool>
-         </property>
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
          </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
@@ -284,9 +233,6 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAfterFeeText">
-         <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
-         </property>
          <property name="text">
           <string>After Fee:</string>
          </property>
@@ -294,12 +240,6 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlAfterFee">
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -331,12 +271,6 @@
         <widget class="QLabel" name="labelCoinControlChange">
          <property name="enabled">
           <bool>false</bool>
-         </property>
-         <property name="font">
-          <font>
-           <family>Monospace</family>
-           <pointsize>10</pointsize>
-          </font>
          </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>

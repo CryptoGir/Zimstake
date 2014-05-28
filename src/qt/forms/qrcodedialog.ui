@@ -28,9 +28,6 @@
        <height>300</height>
       </size>
      </property>
-     <property name="textFormat">
-      <enum>Qt::PlainText</enum>
-     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>

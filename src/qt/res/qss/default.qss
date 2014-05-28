@@ -15,6 +15,22 @@ QTableView
     background-image: url(:/images/s-back);
 }
 
+QFrame
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/s-back);
+}
+
+QTreeWidget
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/s-back);
+}
+
 QToolBar
 {
     font-family: 'Comic Sans';
@@ -37,6 +53,9 @@ QTabBar::tab
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/button);
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 3px;
 }
 
 QTabBar::tab:selected, QTabBar::tab:hover
@@ -60,7 +79,21 @@ QComboBox
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background: #2C3236;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+QComboBox::editable
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background: #2C3236;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1px;
 }
 
 QProgressBar
@@ -114,14 +147,6 @@ QMenuBar::item
     background-image: url(:/images/s-back);
 }
 
-QListView#listTransactions
-{
-    font-family: 'Comic Sans';
-    color: #ffffff;
-    font-weight: bold;
-    background: transparent;
-}
-
 QListView
 {
     font-family: 'Comic Sans';
@@ -167,7 +192,15 @@ QLineEdit
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background: #2C3236;
+}
+
+QAbstractSpinBox
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background: #2C3236;
 }
 
 QToolTip
@@ -177,4 +210,20 @@ QToolTip
     background-color: #BD0659;
     border: 0px;
     font-weight: bold;
+}
+
+QHeaderView
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background: #2C3236;
+}
+
+QHeaderView::section
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background: #2C3236;
 }

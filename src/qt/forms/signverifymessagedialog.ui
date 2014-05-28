@@ -337,12 +337,6 @@
          </item>
          <item>
           <widget class="QLabel" name="statusLabel_VM">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="text">
             <string/>
            </property>

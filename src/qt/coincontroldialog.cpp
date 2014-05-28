@@ -579,7 +579,7 @@ void CoinControlDialog::updateView()
 
     ui->treeWidget->clear();
     ui->treeWidget->setEnabled(false); // performance, otherwise updateLabels would be called for every checked checkbox
-    ui->treeWidget->setAlternatingRowColors(!treeMode);
+    ui->treeWidget->setAlternatingRowColors(false);
     QFlags<Qt::ItemFlag> flgCheckbox=Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsUserCheckable;
     QFlags<Qt::ItemFlag> flgTristate=Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsTristate;    
     
@@ -609,7 +609,7 @@ void CoinControlDialog::updateView()
             itemWalletAddress->setCheckState(COLUMN_CHECKBOX,Qt::Unchecked);
             
             for (int i = 0; i < ui->treeWidget->columnCount(); i++)
-                itemWalletAddress->setBackground(i, QColor(248, 247, 246));
+                //itemWalletAddress->setBackground(i, QColor(248, 247, 246));
             
             // label
             itemWalletAddress->setText(COLUMN_LABEL, sWalletLabel);

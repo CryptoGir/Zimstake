@@ -20,7 +20,7 @@ QFrame
     font-family: 'Comic Sans';
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background: transparent;
 }
 
 QTreeWidget
@@ -226,4 +226,12 @@ QHeaderView::section
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
+}
+
+QTextEdit
+{
+    font-family: 'Comic Sans';
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(:/images/s-back);
 }

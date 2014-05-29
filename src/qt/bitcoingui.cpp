@@ -347,6 +347,9 @@ void BitcoinGUI::createToolBars()
     QWidget *spacerWidget = new QWidget(this);
     spacerWidget->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
     spacerWidget->setVisible(true);
+    QWidget *spacerWidget1 = new QWidget(this);
+    spacerWidget1->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
+    spacerWidget1->setVisible(true);
     toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     toolbar->addWidget(spacerWidget);
     toolbar->addAction(overviewAction);
@@ -354,16 +357,10 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+    toolbar->addWidget(spacerWidget1);
+
     //toolbar->setObjectName("tabsToolbar");
 
-    QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
-        QWidget *spacerWidget1 = new QWidget(this);
-    spacerWidget1->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
-    spacerWidget1->setVisible(true);
-    toolbar2->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    toolbar2->addAction(exportAction);
-    toolbar2->addWidget(spacerWidget1);
-    //toolbar2->setObjectName("actionsToolbar");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)

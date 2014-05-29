@@ -1,6 +1,6 @@
 QMainWindow
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/v-back);
@@ -9,7 +9,7 @@ QMainWindow
 
 QTableView
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -17,7 +17,7 @@ QTableView
 
 QFrame
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: transparent;
@@ -25,7 +25,7 @@ QFrame
 
 QTreeWidget
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -33,7 +33,7 @@ QTreeWidget
 
 QToolBar
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -41,7 +41,7 @@ QToolBar
 
 QTabWidget
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -49,7 +49,7 @@ QTabWidget
 
 QTabBar::tab
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/button);
@@ -60,7 +60,7 @@ QTabBar::tab
 
 QTabBar::tab:selected, QTabBar::tab:hover
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/button);
@@ -68,7 +68,7 @@ QTabBar::tab:selected, QTabBar::tab:hover
 
 QWidget
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -76,7 +76,7 @@ QWidget
 
 QComboBox
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
@@ -87,7 +87,7 @@ QComboBox
 
 QComboBox::editable
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
@@ -98,7 +98,7 @@ QComboBox::editable
 
 QProgressBar
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     border-top-style: inset;
@@ -108,7 +108,7 @@ QProgressBar
 
 QProgressBar::chunk
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;    
     width: 10px;
@@ -117,7 +117,7 @@ QProgressBar::chunk
 
 QLabel
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: transparent;
@@ -125,7 +125,7 @@ QLabel
 
 QMenu
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -133,7 +133,7 @@ QMenu
 
 QMenuBar
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -141,7 +141,7 @@ QMenuBar
 
 QMenuBar::item
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -149,7 +149,7 @@ QMenuBar::item
 
 QListView
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -157,7 +157,7 @@ QListView
 
 QToolButton
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -165,7 +165,7 @@ QToolButton
 
 QDialogButtonBox
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -173,7 +173,7 @@ QDialogButtonBox
 
 QPushButton
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/button);
@@ -181,7 +181,7 @@ QPushButton
 
 QDialog
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -189,7 +189,7 @@ QDialog
 
 QLineEdit
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
@@ -197,7 +197,7 @@ QLineEdit
 
 QAbstractSpinBox
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
@@ -205,7 +205,7 @@ QAbstractSpinBox
 
 QToolTip
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     background-color: #BD0659;
     border: 0px;
@@ -214,7 +214,7 @@ QToolTip
 
 QHeaderView
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
@@ -222,7 +222,7 @@ QHeaderView
 
 QHeaderView::section
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background: #2C3236;
@@ -230,7 +230,7 @@ QHeaderView::section
 
 QTextEdit
 {
-    font-family: 'Comic Sans';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);

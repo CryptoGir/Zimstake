@@ -33,7 +33,7 @@ QTreeWidget
 
 QToolBar
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/s-back);
@@ -157,10 +157,28 @@ QListView
 
 QToolButton
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background-color:transparent;
+    border:0px;
+}
+
+QToolButton::hover
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #3c74ac, stop: 0.5 #3c74ac, stop: 1.0 transparent); 
+    border: 0px solid grey;
+}
+
+QToolButton::checked
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #EEE;
+    font-weight: bold;
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #000000, stop: 0.5 #000000, stop: 1.0 transparent); 
 }
 
 QDialogButtonBox

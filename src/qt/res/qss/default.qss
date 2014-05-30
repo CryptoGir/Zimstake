@@ -21,6 +21,7 @@ QFrame
     color: #ffffff;
     font-weight: bold;
     background: transparent;
+    border:none;
 }
 
 QTreeWidget
@@ -33,10 +34,11 @@ QTreeWidget
 
 QToolBar
 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/s-back);
+    border:none;
 }
 
 QTabWidget
@@ -71,7 +73,7 @@ QWidget
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background-color:transparent;
 }
 
 QComboBox
@@ -152,32 +154,34 @@ QListView
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: #ffffff;
     font-weight: bold;
-    background-image: url(:/images/s-back);
+    background-color:transparent;
 }
 
 QToolButton
 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal
     background-color:transparent;
-    border:0px;
+    border:none;
+    margin:5px;
 }
 
 QToolButton::hover
 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #3c74ac, stop: 0.5 #3c74ac, stop: 1.0 transparent); 
-    border: 0px solid grey;
+    border: none;
 }
 
 QToolButton::checked
 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: sans-serif;
     color: #EEE;
-    font-weight: bold;
+    font-weight: normal;
+    border:none;
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #000000, stop: 0.5 #000000, stop: 1.0 transparent); 
 }
 
@@ -195,6 +199,7 @@ QPushButton
     color: #ffffff;
     font-weight: bold;
     background-image: url(:/images/button);
+    border:none;
 }
 
 QDialog

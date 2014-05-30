@@ -40,6 +40,8 @@ QToolBar
     background-image: url(:/images/s-back);
     border:none;
     border-bottom:1px solid grey;
+    spacing:5px;
+    padding:7px;
 }
 
 QTabWidget
@@ -164,8 +166,6 @@ QToolButton
     font-weight: normal;
     background-color:transparent;
     border:none;
-    margin-right:5px;
-    margin-left:5px;
 }
 
 QToolButton::hover

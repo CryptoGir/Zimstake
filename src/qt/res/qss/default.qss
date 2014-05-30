@@ -34,15 +34,9 @@ QTreeWidget
 
 QToolBar
 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-weight: normal;
-    background-image: url(:/images/s-back);
-    border:none;
-    border-bottom:1px solid grey;
-    spacing:5px;
-    padding:7px;
-    font-size:10px;
+	background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #275079, stop: 0.4 #336699, stop: 0.5 #336699, stop: 1.0 #336699);    border:none;
+    border-bottom:none;
+    spacing:35px;
 }
 
 QTabWidget
@@ -163,17 +157,20 @@ QListView
 
 QToolButton
 {
+    font-family: Helvetica, Arial, sans-serif;
     color: #ffffff;
-    font-weight: normal;
+    font-weight: bold;
+	font-size:9px;
     background-color:transparent;
     border:none;
+	
 }
 
 QToolButton::hover
 {
     color: #ffffff;
     font-weight: normal;
-    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #3c74ac, stop: 0.5 #3c74ac, stop: 1.0 transparent); 
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #C55584, stop: 0.5 #C55584, stop: 1.0 transparent); 
     border: none;
 }
 
@@ -182,7 +179,7 @@ QToolButton::checked
     color: #EEE;
     font-weight: normal;
     border:none;
-    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #000000, stop: 0.5 #000000, stop: 1.0 transparent); 
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 transparent, stop: 0.5 transparent, stop: 1.0 #C55584); 
 }
 
 QDialogButtonBox

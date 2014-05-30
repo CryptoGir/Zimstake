@@ -47,10 +47,6 @@
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
     </qresource>
-    <qresource prefix="/fonts" >
-	<file>Lato-Bol.ttf</file>
-	<file>Lato-Reg.ttf</file>
-</qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>

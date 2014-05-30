@@ -77,25 +77,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     trayIcon(0),
     notificator(0),
     rpcConsole(0)
-    QStringList list;
-list << "DejaVuSerif.ttf" << "DejaVuSerif-Bold.ttf" << "DejaVuSerif-Italic.ttf" << "DejaVuSerif-BoldItalic.ttf";
-int fontID(-1);
-bool fontWarningShown(false);
-for (QStringList::const_iterator constIterator = list.constBegin(); constIterator != list.constEnd(); ++constIterator) {
-	QFile res(":/polices/" + *constIterator);
-	if (res.open(QIODevice::ReadOnly) == false) {
-		if (fontWarningShown == false) {
-			QMessageBox::warning(0, "Application", (QString)"Impossible d'ouvrir la police " + QChar(0x00AB) + " DejaVu Serif " + QChar(0x00BB) + ".");
-			fontWarningShown = true;
-		}
-	} else {
-		fontID = QFontDatabase::addApplicationFontFromData(res.readAll());
-		if (fontID == -1 && fontWarningShown == false) {
-			QMessageBox::warning(0, "Application", (QString)"Impossible d'ouvrir la police " + QChar(0x00AB) + " DejaVu Serif " + QChar(0x00BB) + ".");
-			fontWarningShown = true;
-		}
-	}
-}
+    
 {
     resize(850, 550);
     setWindowTitle(tr("Zimstake") + " - " + tr("Wallet"));

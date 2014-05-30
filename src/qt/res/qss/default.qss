@@ -34,7 +34,7 @@ QTreeWidget
 
 QToolBar
 {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
     background-image: url(:/images/s-back);
@@ -160,17 +160,16 @@ QListView
 
 QToolButton
 {
-    font-family: sans-serif;
     color: #ffffff;
-    font-weight: normal
+    font-weight: normal;
     background-color:transparent;
     border:none;
-    margin:15px;
+    margin-right:5px;
+    margin-left:5px;
 }
 
 QToolButton::hover
 {
-    font-family: sans-serif;
     color: #ffffff;
     font-weight: normal;
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #3c74ac, stop: 0.5 #3c74ac, stop: 1.0 transparent); 
@@ -179,7 +178,6 @@ QToolButton::hover
 
 QToolButton::checked
 {
-    font-family: sans-serif;
     color: #EEE;
     font-weight: normal;
     border:none;

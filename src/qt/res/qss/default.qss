@@ -31,11 +31,16 @@ QTreeWidget
     font-weight: bold;
     background-image: url(:/images/s-back);
 }
-
+QMainWindow::QToolBar
+{
+	background-color: white;    
+	border:0px solid blue;
+    spacing:35px;
+}
 QToolBar
 {
-	background-color: #FFFFFF;    
-	border:none;
+	background-color: white;    
+	border:0px solid blue;
     spacing:35px;
 }
 
@@ -161,7 +166,6 @@ QToolButton
     color: #ffffff;
     font-weight: bold;
 	font-size:11px;
-    background-color:transparent;
     border:none;
 	
 }

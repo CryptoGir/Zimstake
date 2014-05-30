@@ -34,8 +34,8 @@ QTreeWidget
 
 QToolBar
 {
-	background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #275079, stop: 0.4 #336699, stop: 0.5 #336699, stop: 1.0 #336699);    border:none;
-    border-bottom:none;
+	background-color: #FFFFFF;    
+	border:none;
     spacing:35px;
 }
 
@@ -160,7 +160,7 @@ QToolButton
     font-family: Helvetica, Arial, sans-serif;
     color: #ffffff;
     font-weight: bold;
-	font-size:9px;
+	font-size:11px;
     background-color:transparent;
     border:none;
 	
@@ -169,15 +169,15 @@ QToolButton
 QToolButton::hover
 {
     color: #ffffff;
-    font-weight: normal;
+    font-weight: bold;
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #C55584, stop: 0.5 #C55584, stop: 1.0 transparent); 
     border: none;
 }
 
 QToolButton::checked
 {
-    color: #EEE;
-    font-weight: normal;
+    color: #EEEEEE;
+    font-weight: bold;
     border:none;
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 transparent, stop: 0.5 transparent, stop: 1.0 #C55584); 
 }

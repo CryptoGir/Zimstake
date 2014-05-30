@@ -64,25 +64,7 @@ extern CWallet* pwalletMain;
 extern int64_t nLastCoinStakeSearchInterval;
 extern unsigned int nTargetSpacing;
 double GetPoSKernelPS();
-QStringList list;
-list << "Lato-Bol.ttf" << "Lato-Reg.ttf";
-int fontID(-1);
-bool fontWarningShown(false);
-for (QStringList::const_iterator constIterator = list.constBegin(); constIterator != list.constEnd(); ++constIterator) {
-	QFile res(":/fonts/" + *constIterator);
-	if (res.open(QIODevice::ReadOnly) == false) {
-		if (fontWarningShown == false) {
-			QMessageBox::warning(0, "Application", (QString)"Impossible d'ouvrir la police " + QChar(0x00AB) + " Lato " + QChar(0x00BB) + ".");
-			fontWarningShown = true;
-		}
-	} else {
-		fontID = QFontDatabase::addApplicationFontFromData(res.readAll());
-		if (fontID == -1 && fontWarningShown == false) {
-			QMessageBox::warning(0, "Application", (QString)"Impossible d'ouvrir la police " + QChar(0x00AB) + " Lato " + QChar(0x00BB) + ".");
-			fontWarningShown = true;
-		}
-	}
-}
+
 BitcoinGUI::BitcoinGUI(QWidget *parent):
     QMainWindow(parent),
     clientModel(0),

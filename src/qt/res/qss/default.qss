@@ -1,35 +1,33 @@
 QMainWindow
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/v-back);
     background-position: top center;
 }
 
 QTableView
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
-    background-image: url(:/images/s-back);
+    font-weight: normal;
 }
 
 QFrame
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: transparent;
     border:none;
 }
 
 QTreeWidget
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
-    background-image: url(:/images/s-back);
+    font-weight: normal;
 }
 QMainWindow::QToolBar
 {
@@ -39,24 +37,27 @@ QMainWindow::QToolBar
 }
 QToolBar
 {
-	background-color: white;    
+	 
 	border:0px solid blue;
-    spacing:35px;
+    background-color: white;   
+	spacing:35px;
+	    background-image: url(:/images/m-back);
+
 }
 
 QTabWidget
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/s-back);
 }
 
 QTabBar::tab
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/button);
     border: 1px solid white;
     border-radius: 2px;
@@ -65,25 +66,25 @@ QTabBar::tab
 
 QTabBar::tab:selected, QTabBar::tab:hover
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/button);
 }
 
 QWidget
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-color:transparent;
 }
 
 QComboBox
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: #2C3236;
     border: 1px solid black;
     border-radius: 5px;
@@ -92,20 +93,22 @@ QComboBox
 
 QComboBox::editable
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: #2C3236;
     border: 1px solid black;
     border-radius: 5px;
     padding: 1px;
 }
-
+QStatusBar::item{
+border:none;
+}
 QProgressBar
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     border-top-style: inset;
     text-align: center;
     background: transparent;
@@ -113,58 +116,58 @@ QProgressBar
 
 QProgressBar::chunk
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;    
+    font-weight: normal;    
     width: 10px;
     margin: 0.5px;
 }
 
 QLabel
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: transparent;
 }
 
 QMenu
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/s-back);
 }
 
 QMenuBar
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/s-back);
 }
 
 QMenuBar::item
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/s-back);
 }
 
 QListView
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-color:transparent;
 }
 
 QToolButton
 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
 	font-size:11px;
     border:none;
 	
@@ -173,89 +176,86 @@ QToolButton
 QToolButton::hover
 {
     color: #ffffff;
-    font-weight: bold;
-    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #C55584, stop: 0.5 #C55584, stop: 1.0 transparent); 
+    font-weight: normal;
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #e592a9, stop: 0.5 #e592a9, stop: 1.0 transparent); 
     border: none;
 }
 
 QToolButton::checked
 {
     color: #EEEEEE;
-    font-weight: bold;
-    border:none;
-    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 transparent, stop: 0.5 transparent, stop: 1.0 #C55584); 
+    font-weight: normal;
+    border-bottom:1px solid #610a2e;
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #970e48, stop: 0.5 #970e48, stop: 1.0 #610a2e); 
 }
 
 QDialogButtonBox
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
-    background-image: url(:/images/s-back);
+    font-weight: normal;
 }
 
 QPushButton
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
-    background-image: url(:/images/button);
+    font-weight: normal;
     border:none;
 }
 
 QDialog
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
-    background-image: url(:/images/s-back);
+    font-weight: normal;
 }
 
 QLineEdit
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: #2C3236;
 }
 
 QAbstractSpinBox
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: #2C3236;
 }
 
 QToolTip
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     background-color: #BD0659;
     border: 0px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 QHeaderView
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: #2C3236;
 }
 
 QHeaderView::section
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background: #2C3236;
 }
 
 QTextEdit
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     background-image: url(:/images/s-back);
 }

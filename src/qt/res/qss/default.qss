@@ -42,6 +42,7 @@ QToolBar
     border-bottom:1px solid grey;
     spacing:5px;
     padding:7px;
+    font-size:10px;
 }
 
 QTabWidget

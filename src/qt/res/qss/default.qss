@@ -19,8 +19,9 @@ QFrame
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
-    background: transparent;
-    border:none;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 2px;
 }
 
 QTreeWidget
@@ -29,20 +30,20 @@ QTreeWidget
     color: #ffffff;
     font-weight: normal;
 }
+
 QMainWindow::QToolBar
 {
-	background-color: white;    
-	border:0px solid blue;
+    background-color: white;
+    border:0px solid blue;
     spacing:35px;
 }
+
 QToolBar
 {
-	 
-	border:0px solid blue;
-    background-color: white;   
-	spacing:35px;
-	    background-image: url(:/images/m-back);
-
+    border:0px solid blue;
+    background-color: white;
+    spacing:35px;
+    background-image: url(:/images/m-back);
 }
 
 QTabWidget
@@ -70,6 +71,14 @@ QTabBar::tab:selected, QTabBar::tab:hover
     color: #ffffff;
     font-weight: normal;
     background-image: url(:/images/button);
+}
+
+QWidget#tabMain, QWidget#tabNetwork, QWidget#tabWindow, QWidget#tabDisplay, QWidget#tab_info, QWidget#tab_console
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    background-image: url(:/images/s-back);
 }
 
 QWidget
@@ -101,9 +110,12 @@ QComboBox::editable
     border-radius: 5px;
     padding: 1px;
 }
-QStatusBar::item{
+
+QStatusBar::item
+{
 border:none;
 }
+
 QProgressBar
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -140,6 +152,14 @@ QMenu
     background-image: url(:/images/s-back);
 }
 
+QMenu::hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    background: blue;
+}
+
 QMenuBar
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -156,6 +176,12 @@ QMenuBar::item
     background-image: url(:/images/s-back);
 }
 
+QMenu::separator
+{
+    height: 2px;
+    background-image: url(:/images/m-back);
+ }
+
 QListView
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -169,10 +195,9 @@ QToolButton
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
-	font-size:11px;
+    font-size:11px;
     border:none;
-		padding:5px;
-	
+    padding:5px;
 }
 
 QToolButton::hover
@@ -204,7 +229,13 @@ QPushButton
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
-    border:none;
+    min-width: 5em;
+    padding: 3px;
+    background-image: url(:/images/m-back);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
 }
 
 QDialog
@@ -212,6 +243,14 @@ QDialog
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
+}
+
+QDialog#OptionsDialog, QDialog#RPCConsole, QDialog#AboutDialog, QDialog#TransactionDescDialog
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    background-image: url(:/images/s-back);
 }
 
 QLineEdit

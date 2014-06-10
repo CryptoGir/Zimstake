@@ -14,6 +14,22 @@ QTableView
     font-weight: normal;
 }
 
+QTableView::item:selected
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    background: blue;
+}
+
+QTableView::item:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    background: blue;
+}
+
 QFrame
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,13 +45,6 @@ QTreeWidget
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
-}
-
-QMainWindow::QToolBar
-{
-    background-color: white;
-    border:0px solid blue;
-    spacing:35px;
 }
 
 QToolBar
@@ -113,7 +122,7 @@ QComboBox::editable
 
 QStatusBar::item
 {
-border:none;
+    border:none;
 }
 
 QProgressBar
@@ -202,6 +211,7 @@ QToolButton
 
 QToolButton::hover
 {
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-weight: normal;
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 transparent, stop: 0.4 #d60664, stop: 0.5 #d60664, stop: 1.0 transparent); 
@@ -211,6 +221,7 @@ QToolButton::hover
 
 QToolButton::checked
 {
+    font-family: Arial, Helvetica, sans-serif;
     color: #EEEEEE;
     font-weight: normal;
     border-bottom:1px solid #610a2e;

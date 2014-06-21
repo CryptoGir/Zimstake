@@ -47,7 +47,7 @@
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
         <file alias="ircchat">res/icons/ircchat.png</file>
-        <file alias="explorer">res/icons/explorer.png</file>
+        <file alias="block">res/icons/block.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>

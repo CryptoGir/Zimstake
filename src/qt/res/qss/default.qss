@@ -40,6 +40,16 @@ QFrame
     border-radius: 2px;
 }
 
+QFrame#userView
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 2px;
+}
+
 QTreeWidget
 {
     font-family: Arial, Helvetica, sans-serif;

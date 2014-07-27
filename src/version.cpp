@@ -56,7 +56,7 @@ const std::string CLIENT_NAME("CG");
 
 #ifndef BUILD_DATE
 #    ifdef GIT_COMMIT_DATE
-#        define BUILD_DATE "June 20, 2014"
+#        define BUILD_DATE "July 27, 2014"
 #    else
 #        define BUILD_DATE __DATE__ ", " __TIME__
 #    endif

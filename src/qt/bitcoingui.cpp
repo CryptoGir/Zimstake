@@ -27,6 +27,7 @@
 #include "guiutil.h"
 #include "rpcconsole.h"
 #include "wallet.h"
+#include "chatwindow.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -108,6 +109,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     // Create tabs
     overviewPage = new OverviewPage();
     blockExplorer = new BlockExplorer(this);
+	chatWindow = new ChatWindow(this);
 
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
@@ -126,6 +128,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget = new QStackedWidget(this);
     centralWidget->addWidget(overviewPage);
     centralWidget->addWidget(blockExplorer);
+	centralWidget->addWidget(chatWindow);
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
@@ -253,6 +256,11 @@ void BitcoinGUI::createActions()
     blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(blockAction);
 
+	chatAction = new QAction(QIcon(":/icons/ircchat"), tr("&IRC CHAT"), this);
+    chatAction->setToolTip(tr("View chat"));
+    chatAction->setCheckable(true);
+    tabGroup->addAction(chatAction);
+
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -261,6 +269,7 @@ void BitcoinGUI::createActions()
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
     connect(blockAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockExplorer()));
+	connect(chatAction, SIGNAL(triggered()), this, SLOT(gotoChatPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -364,6 +373,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
 	toolbar->addAction(blockAction);
+	toolbar->addAction(chatAction);
     toolbar->addWidget(spacerWidget1);
 
 }
@@ -425,6 +435,7 @@ void BitcoinGUI::setWalletModel(WalletModel *walletModel)
         receiveCoinsPage->setModel(walletModel->getAddressTableModel());
         sendCoinsPage->setModel(walletModel);
         signVerifyMessageDialog->setModel(walletModel);
+		chatWindow->setModel(clientModel);
         blockExplorer->setModel(clientModel);
 
         setEncryptionStatus(walletModel->getEncryptionStatus());
@@ -730,6 +741,21 @@ void BitcoinGUI::gotoBlockExplorer()
 {
     blockAction->setChecked(true);
     centralWidget->setCurrentWidget(blockExplorer);
+
+    exportAction->setEnabled(true);
+    exportAction->setVisible(true);
+
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+    exportAction->setVisible(false);
+
+    exportAction->setEnabled(false);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+}
+
+void BitcoinGUI::gotoChatPage()
+{
+    chatAction->setChecked(true);
+    centralWidget->setCurrentWidget(chatWindow);
 
     exportAction->setEnabled(true);
     exportAction->setVisible(true);
